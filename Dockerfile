@@ -13,7 +13,7 @@ ENV SINUS_USER="3000" \
     TS3_VERSION="3.0.19.4" \
     TS3_OFFSET="25000"
 
-ADD entrypoint.sh /entrypoint.sh
+ADD start /start
 
 RUN groupadd -g 3000 sinusbot && \
     useradd -u 3000 -g 3000 -d "$SINUS_DIR" sinusbot && \
@@ -48,4 +48,4 @@ VOLUME ["$SINUS_DATA"]
 
 EXPOSE 8087
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/start"]
