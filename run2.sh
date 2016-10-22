@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker run -d=true --privileged=true -h sinusbot --name=sinusbot --restart=always -v=/app/sinusbot:/sinusbot/data art567/sinusbot /start
