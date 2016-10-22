@@ -33,3 +33,15 @@ If your host uses SELinux it may be necessary to use the **:z** option:
 ```
 docker run --name sinusbot -d -v /data/sinusbot:/sinusbot/data:z -p 8087:8087 galexrt/sinusbot:latest
 ```
+
+### Run container
+Running this container is very simple:
+```
+./run.sh
+```
+
+### Stop container
+Stopping this container is also simple:
+```
+./stop.sh
+```
